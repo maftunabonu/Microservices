@@ -9,6 +9,7 @@ lint:
 	pylint --disable=R,C mylib/*.py
 test:
 	#test
+	python -m pytest -vv --cov=mylib test_logic.py
 deploy:
 	#deploy
 all:	install lint format test deploy
